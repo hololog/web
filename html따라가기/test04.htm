@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>table - 표 만들기</title>
+  <style type="text/css">
+   table, tr, th, td {  
+    border:1px solid #86a;
+    }
+  </style>
+ </head>
+ <body>
+<hr>
+ <h1>table - 표 만들기</h1>
+<hr>
+<ol>
+ <li>table - 표를 구성하는 태그</li>
+ <li>tr - 줄을 구성하는 태그</li>
+ <li>th - 제목칸을 구성하는 태그</li>
+ <li>td - 칸을 구성하는 태그</li>
+</ol>
+
+<table>
+ <tr>
+  <th>태그</th>
+  <th>설명</th>
+ </tr>
+ <tr>
+  <td>table</td>
+  <td>표를 구성하는 태그</td>
+ </tr>
+ <tr>
+  <td>tr</td>
+  <td>줄을 구성하는 태그</td>
+ </tr>
+ <tr>
+  <td>th</td>
+  <td>제목칸(bold체, 중앙정렬)을 구성하는 태그</td>
+ </tr>
+ <tr>
+  <td>td</td>
+  <td>칸을 구성하는 태그</td>
+ </tr> 
+</table>
+<br>
+<table>
+ <tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Pass</th>
+ </tr>
+ <tr>
+  <td>lhs7878</td>
+  <td>Lee hee soo</td>
+  <td>ldf***</td>
+ </tr>
+ <tr>
+  <td>aja24565</td>
+  <td>An ji a</td>
+  <td>ajs*****</td>
+ </tr>
+</table>
+
+<h5>문제. 표 만들기</h5>
+
+<table>
+ <tr>
+  <th>no.</th>
+  <th>date</th>
+  <th>title</th>
+  <th>view</th>
+ </tr>
+ <tr>
+  <td>01</td>
+  <td>2021.12.02</td>
+  <td>table-2</td>
+  <td>20114</td>
+ </tr>
+ <tr>
+  <td>02</td>
+  <td>2021.12.02</td>
+  <td>form</td>
+  <td>14191</td>
+ </tr>
+</table>
+
+<h3>(가로형 표 구성시)</h3>
+<table>
+ <tr>
+  <th>ID</th>
+  <td>lhs7878</td>
+  <td>aja24565</td>
+ </tr>
+ <tr>
+  <th>Name</th>
+  <td>Lee hee soo</td>
+  <td>An ji a</td>
+ </tr>
+ <tr>
+  <th>Pass</th>
+  <td>ldf***</td>
+  <td>ajs*****</td> 
+ </tr>
+</table>
+<h5>문제. 표 만들기</h5>
+<table>
+ <tr>
+  <th>a</th>
+  <th>b</th>
+ </tr>
+ <tr>
+  <td>3</td>
+  <td>4</td>
+ </tr>
+</table>
+
+
+
+<table>
+<tr>
+  <th>번호</th>
+  <th>이름</th>
+  <th>체온</th>
+</tr>
+<tr>
+  <td>01</td>
+  <td>꿀고구마</td>
+  <td>99.9<sup>o</sup></td>
+</tr>
+<tr>
+  <td>02</td>
+  <td>호박고구마</td>
+  <td>88.8<sup>o</sup></td>
+</tr>
+</table>
+<hr>
+
+<h2>칸합치기</h2>
+<table>
+<tr>
+<th colspan="2">칸 합치기</th>
+</tr>
+<tr>
+  <th>속성</th>
+  <th>설명</th>
+</tr>
+<tr>
+  <td>colspan="n"</td>
+  <td>가로로 n개의 칸을 하나로 합침</td>
+</tr>
+<tr>
+  <td>rowspan="n"</td>
+  <td>세로로 n개의 칸을 하나로 합침</td>
+</tr>
+</table>
+
+
+
+
+clospan="n"
+가로로 n개의 칸을 하나로 합침
+rowspan="n"
+세로로 n개의 칸을 하나로 합침
+
+<h3>칸합치기</h3>
+<table>
+<tr>
+  <td colspan="2">a</td>
+  <td colspan="2">b</td>
+</tr>
+<tr>
+  <td>c</td>
+  <td>d</td>
+  <td>e</td>
+  <td>f</td>
+</tr>
+<tr>
+  <td>g</td>
+  <td colspan="3">h</td>
+</tr>
+</table>
+ </body>
+</html>
+<hr>
+<h3>문진표</h3>
+<table>
+<tr>
+  <th colspan="4">문진표</th>
+</tr>
+<tr>
+  <th colspan="2">문진표1</th>
+  <th colspan="2">문진표2</th>
+</tr>
+<tr>
+  <td>꿀호박</td>
+  <td>88.8<sup>o</sup></td>
+  <td>꿀호박</td>
+  <td>99.9<sup>o</sup></td>
+</tr>
+<tr>
+  <th colspan="4">기타사항</th>
+</tr>
+<tr>
+  <th colspan="2">문진표3</th>
+  <th colspan="2">문진표4</th>
+</tr>
+<tr>
+  <td>고구마호박</td>
+  <td>77.7<sup>o</sup></td>
+  <td>호박고구마</td>
+  <td>66.6<sup>o</sup></td>
+</tr>
+<tr>
+  <td>기타사항</td>
+  <td>귀가조치</td>
+  <td>기타사항</td>
+  <td>입가조치</td>
+</tr>
+<tr>
+  <th>기관명</th>
+  <th colspan="3">아이티윌부산</th>
+</tr>
+
+ </body>
+</html>
+
+<table>
+
+<tr>
+  <td rowspan="3">문진표1</td>
+  <td>이름</td>
+  <td>호박꿀</td>
+  <td>꿀호박</td>
+</tr>
+<tr>
+  <td>온도</td>
+  <td>36.5</td>
+  <td>44.4</td>
+</tr>
+<tr>
+  <td>기타사항</td>
+  <td>사망</td>
+  <td>퇴원조치</td>
+</tr>
+</table>
+<table>
+
+<tr>
+  <td rowspan="3">a</td>
+  <td>b</td>
+  <td rowspan="2">c</td>
+  <td>d</td>
+</tr>
+<tr>
+  <td>e</td>
+  <td>f</td>
+</tr>
+<tr>
+  <td>g</td>
+  <td>h</td>
+  <td>i</td>
+</tr>
+</table>
+
+
+
+<hr>
+<h1>문제. 복합 칸 합치기 - 1 </h1>
+<table>
+
+<tr>
+  <th colspan="4">아이티윌 게스트하우스 예약 안내</th>
+</tr>
+<tr>
+  <th>방 이름</th>
+  <th>대상</th>
+  <th>크기</th>
+  <th>가격</th>
+</tr>
+<tr>
+  <th>유채방</th>
+  <td>여성 도미토리</td>
+  <td rowspan="3">4인실</td>
+  <td rowspan="4">1인 20,000원</td>
+</tr>
+<tr>
+  <th rowspan="2">동백방</th>
+  <td>남성 도미토리</td>
+</tr>
+<tr>
+  <td>가족 1팀</td>
+</tr>
+<tr>
+  <th colspan="2">천혜향방</th>
+  <td>2인실</td>
+</tr>
+<tr>
+  <td colspan="4"><b>바깥채 단독 : 전화문의</b> (010-777-5454)</td>
+</tr>
+</table>
+
+
+
+
+<table>
+
+<tr>
+  <th colspan="6">자바 개발자반</th>
+</tr>
+<tr>
+  <th colspan="2">오라클</th>
+  <th colspan="2">웹표준 UI</th>
+  <th colspan="2">애플리케이션</th>
+</tr>
+<tr>
+  <th rowspan="4">1교시<br>~<br>4교시</th>
+  <td rowspan="4"><b>특강</b><br>
+		  <small>강사</small><br>
+	 	  <b>홍길동</b></td>
+  <td colspan="2">1교시</td>
+  <td colspan="2">1교시</td>
+</tr>
+<tr>
+  <td colspan="2">2교시</td>
+  <td colspan="2">2교시</td>
+</tr>
+<tr>
+  <td colspan="2">3교시</td>
+  <td colspan="2">2교시</td>
+</tr>
+<tr>
+  <td colspan="2">4교시</td>
+  <td colspan="2">4교시</td>
+</tr>
+<tr>
+  <td colspan="2">5교시</td>
+  <td rowspan="4">5교시<br>~<br>8교시</td>
+  <td rowspan="4"><b>특강</b><br>
+                  <small>강사</small><br>
+                  <b>홍길순</b></td>  
+  <td colspan="2">5교시</td>
+</tr>
+<tr>
+  <td colspan="2">6교시</td>
+  <td colspan="2">6교시</td>
+</tr>
+<tr>
+  <td colspan="2">7교시</td>
+  <td rowspan="2">7교시<br>~<br>8교시</td>
+  <td rowspan="2"><b>특강</b><br>
+		  <small>강사</small><br>
+		  <b>김갑을</b></td>
+</tr>
+<tr>
+  <td colspan="2">8교시</td>
+</tr>
+</table>
+
+
+
+<html>
+ <head>
+  <title>from-1</title>
+ </head>
+ <body>
+ <from>
+ </from>
+ </body>
+</html>
+<hr>
+<h2>from이란</h2>
+요소 / 사용자 입력을 위한 html양식을 만드는대 사용

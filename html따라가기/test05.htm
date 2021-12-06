@@ -1,0 +1,46 @@
+﻿<html> 
+ <head>
+  <title>form-1</title>
+ </head>
+ <body>
+<hr>
+<h1>form으로 사용자와 연결하기</h1>
+<form action="test.jsp" method="post">
+<h2>input으로 만드는 form요소들</h2>
+<p>input에 대한 설명글을 label태그로 지정하며 <b>label에는 for</b>속성을,
+   <b>input태그에는 id</b>속성을 주어 <b>서로 값을 일치</b>시킴.
+</p>
+<h3>1. input type="text" - 주관식. 한 줄 글상자</h3>
+ <label for="nm">name</label> <input type="text" id="nm">
+ <label for="id">id</label> <input type="text" id="id">
+
+<h3>2. input type="password" - 주관식. 암호 글상자</h3>
+ <label for="pwd">Password</label> <input type="password" id="pwd">
+ <label> S.N <input type="password"> </label>
+
+<h3>3. input type="checkbox" - 객관식. 다중선택 가능한 체크박스</h3>
+ <p>
+  출근시 이용하는 수단은?<br>
+   <label><input type="checkbox"> 도보</label><br>
+   <label><input type="checkbox"> 자전거</label><br>
+   <label><input type="checkbox"> 버스</label><br>
+   <label><input type="checkbox"> 지하철</label><br>
+   <label><input type="checkbox"> 자가용</label>
+ </p>
+</form>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
