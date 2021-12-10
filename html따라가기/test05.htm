@@ -6,6 +6,7 @@
 <hr>
 <h1>form으로 사용자와 연결하기</h1>
 <form action="test.jsp" method="post">
+
 <h2>input으로 만드는 form요소들</h2>
 <p>input에 대한 설명글을 label태그로 지정하며 <b>label에는 for</b>속성을,
    <b>input태그에는 id</b>속성을 주어 <b>서로 값을 일치</b>시킴.
@@ -19,15 +20,191 @@
  <label> S.N <input type="password"> </label>
 
 <h3>3. input type="checkbox" - 객관식. 다중선택 가능한 체크박스</h3>
+ <p>체크박스나 라디오버튼들 중에서 <b>초기값</b>으로 미리 선택되어질 항목에는<br>
+  <b>checked(checked="checked")</b>를 지정함.
+ </p>
+
  <p>
   출근시 이용하는 수단은?<br>
    <label><input type="checkbox"> 도보</label><br>
    <label><input type="checkbox"> 자전거</label><br>
-   <label><input type="checkbox"> 버스</label><br>
-   <label><input type="checkbox"> 지하철</label><br>
+   <label><input type="checkbox" checked> 버스</label><br>
+   <label><input type="checkbox" checked> 지하철</label><br>
    <label><input type="checkbox"> 자가용</label>
  </p>
+
+<h3>4. input type="radio" - 객관식. 단일선택만 가능한 라디오버튼</h3>
+ <p><b>단일선택</b>이 되려면 같은 그룹의 라디오버튼들끼리 
+   <b>name속성의 값을 서로 일치</b>시킴
+ </p>
+ <p>출근시 소요 시간은?<br>
+  <label><input type="radio" name="r-t">10분 이내</label><br>
+  <label><input type="radio" name="r-t">30분 이내</label><br>
+  <label><input type="radio" name="r-t" checked>30분~1시간 이내</label><br>
+  <label><input type="radio" name="r-t">1시간 이상</label>
+ </p>
+
+<h3>5. input type="file" - 파일 전송용</h3>
+ <label>증명사진 <input type="file"> </label>
+
+<h3>6. input type="hidden" - (사용자 무관) 숨은 정보 전송용</h3>
+ <input type="hidden" value="silver">
+
+<h3>7. input type="search" - 검색용 글상자</h3>
+ <p>삭제 기능이 있음</p>
+ <label><input type="search"> 검색</label>
+
+<h3>8. input type="image" - 정보 전송용 이미지</h3>
+ <p>src속성으로 이미지의 경로를 지정</p>
+ <input type="image" src="img_submit.gif">
+<br><br><br><br>
+
+<h2>기타 form요소들</h2>
+<h3>1. textarea ... /textarea 주관식. 여러줄 큰 글상자</h3>
+<p>시작과 종료의 한 쌍. <br> 
+ 가로는 cols속성, 세로는 rows속성으로 지정
+</p>
+<textarea>자기소개</textarea> 
+ <textarea cols="50" rows="6">cols="50" rows="6"
+  ~ 가로50자 입력, 세로 6줄의 크기.
+ </textarea>
+
+<h3>2. select... /select  공간절약형 객관식. 드롭다운 리스트(펼침목록)</h3>
+ <p><b>select로 전체</b>를 묶어주고 실제 <b>선택항목은 option</b>로 지정.</p>
+ <p>출근시 소요 시간은? 
+  <select>
+   <option>10분 이내</option>
+   <option>30분</option>
+   <option>30분~1시간 이내</option>
+   <option>1시간 이상</option>
+  </select>
+ </p>
+
+ <h4>select에 size="n"속성으로 n개의 항목이 보이는 상자형으로 지정.</h4>
+ <p>팀회의 희망 시간은?<br>
+  <select size="4">
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option> 
+  </select>
+ </p>
+
+ <h4>option에 selected(selected="selected")속성으로 option들 중에서 초기값으로 지정.</h4>
+ <p>팀회의 희망 시간은?<br>
+  <select>
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option selected>4교시</option>
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option> 
+  </select>
+ </p>
+<!-- size="4"로 4개의 항목 상자형으로, option에 selected로 6교시 초기값으로
+ -->
+<p>희망 상담시간은?<br>
+  <select size="4">
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+   <option>5교시</option>
+   <option selected>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option> 
+  </select>
+ </p>
+
+ <h4>select에 multiple(multiple="multiple")속성으로 
+    다중선택 가능형으로 지정.</h4>
+ <p>상자형으로 바뀌며 2개 이상 선택시 ctrl키나 shift를 누름.
+  (size="n"속성도 동시 사용 가능)
+ </p>
+ <p>팀회의 희망 시간은?<br>
+  <select multiple> 
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option selected>4교시</option>
+   <option>5교시</option>
+   <option selected>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option> 
+  </select>
+ </p>
+ 
+
+ <h4>option들을 optgroup으로 그룹화하기</h4>
+ <p>여러 연관있는 option들을 optgroup으로 묶어서 그룹화하여 표현.<br>
+  해당 <b>optgroup</b>의 제목(주제)는 <b>label</b>속성으로 지정.
+ </p>
+ <select>
+  <optgroup label="부산진구">
+   <option>부전동</option>
+   <option>연지동</option>
+   <option>초읍동</option>
+   <option selected>양정동</option>
+  </optgroup>
+  <optgroup label="연제구">
+   <option>거제제1동</option>
+   <option>거제제4동</option>
+   <option>연산제1동</option>
+   <option>연산제9동</option>
+  </optgroup>
+ </select>
+
+ <select multiple>
+  <optgroup label="부산진구">
+   <option>부전동</option>
+   <option>연지동</option>
+   <option>초읍동</option>
+   <option>양정동</option>
+  </optgroup>
+  <optgroup label="연제구">
+   <option>거제제1동</option>
+   <option>거제제4동</option>
+   <option>연산제1동</option>
+   <option>연산제9동</option>
+  </optgroup>
+ </select>
+
+<h3>3. button ... /button - 전송버튼(취소/일반) </h3>
+<ul>
+ <li><button>나 <b>전송</b>용</button> - 버튼내에 글자관련 태그 적용 가능</li>
+ <li><button type="reset">너 취소용</button>
+   - type="reset"로 취소용 버튼으로 변경
+ </li>
+ <li><button type="button">걍 버튼</button>
+   - type="button"로 (폼과 무관한)일반 버튼으로 변경
+ </li>
+ <li><button type="button">일반버튼<img src="img_submit.gif" width="20"> 
+     </button> - img src로 버튼내에 이미지 넣기.
+     <i>(+ css로 버튼내에 웹아이콘을 추가 가능)</i>
+ </li>
+</ul>  
+
+
+ <hr>
+ <h3>9 . input type="submit/reset/button" - 정보를 전송/초기화/(일반) 하는 버튼</h3>
+ <input type="submit" value="OK">
+ <input type="reset" value="NO"> <br>
+ 
+ <!-- 일반버튼에 스크립트 연결하여 경고메세지 띄움 -->
+ <input type="button" value="Button" onclick="alert('Why~~?')">
+
+ <!--주석태그 임다-->
+ <!--소스상에 부연설명이나 임시로 태그를 실행시키지 않을 때 등 사용.
+     브라우저에는 안나와요~~ --> 
 </form>
+
+
  </body>
 </html>
 
