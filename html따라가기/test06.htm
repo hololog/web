@@ -1,0 +1,60 @@
+﻿<html>
+ <head>
+  <title>img로 이미지 넣기</title>
+ </head>
+ <body>
+<h1>img로 이미지 넣기</h1>
+<p>
+ &lt;img src="이미지경로" alt="대체텍스트"&gt; <br>
+ 이미지경로 - 이미지 정보 <br>
+ 대체텍스트 - 음성낭독기용, 이미지 나타나지 않을 때 대비용 설명문.
+</p> 
+
+<ul>
+ <li>절대경로 - 항상 고정된 주소.(주로 외부 사이트용)</li>
+ <li>상대경로 - 웹문서의 위치에 따라 달라지는 주소.<br>
+  (상위로 이동시는 ../ 를 횟수만큼, 하위로 이동시는 폴더명/ 로)<br>
+  [ex] "../img/abc.jpg" 
+    - 상위폴더의 또다른 하위폴더인 img폴더 내에 abc.jpg파일이 있음
+ </li>
+</ul>
+
+<h2>웹에서 사용하는 대표 이미지형식 3가지</h2>
+<ul>
+ <li>*.gif - 256가지 색상만 표현. 투명배경 지원. 움짤 가능. </li>
+ <li>*.jpg - 트루컬러 색상 표현 가능. 실사사진에 적합. </li>
+ <li>*.png - 투명배경 지원. 트루컬러 색상 표현 가능. </li>
+</ul>
+
+<h3>1. 절대경로로 이미지 넣기</h3>
+<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="trulli">
+<img src="https://www.w3schools.com/html/img_girl.jpg" alt="girl"> 
+
+<h3>2. 상대경로로 이미지 넣기</h3>
+ <img src="img_submit.gif" alt="전송">
+ <img src="../img/abend.jpg" alt="abend">
+ <img src="../img/png/monster.png" alt="monster">
+ <img src="../img/gif/face.gif" alt="face">
+
+<h2>width/height="n" 가로/세로 크기 지정</h2>
+ 
+<ol>
+ <li><img src="../img/cat.jpg" alt="cat"></li>
+ <li><img src="../img/cat.jpg" alt="cat" width="400"> width="400"</li>
+ <li><img src="../img/cat.jpg" alt="cat" height="400"> height="400"</li>
+ <li><img src="../img/cat.jpg" alt="cat" width="640" height="426">            width="640" height="426"  <br>
+  (원본크기 그대로 적용시에도 가로세로 크기를 기입하면 브라우저에 이미지가 빨리 뜸.)
+ </li>
+</ol>
+
+
+
+
+ </body>
+</html>
+
+
+
+
+
+
