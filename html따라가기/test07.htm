@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+ <hr>
+<nav>
+ <ul>
+  <li><a href="test07.htm">링크수업01</a></li>
+  <li><a href="test07-1.htm">링크수업02</a></li>
+  <li><a href="test07-1.htm#img-03">
+          <!-- test07-1.htm문서의 id가 img-03인 곳으로 이동 -->
+   링크수업02의 3번째 사진보기</a></li>
+ </ul>
+</nav>
+
+ <hr>
+<h1>a로 링크 걸기</h1>
+ &lt;a href="이동경로"&gt; ... &lt;/a&gt; <br>
+ 속성 href에는 절대경로 또는 상대경로로 주소값을 지정.<br>
+ 링크 걸린 텍스트는 밑줄이 나타나고 커서가 손모양으로 바뀌며<br>
+ 색상이 3가지 중 하나로 변함(초기링크=파랑/방문한링크=보라/활성화링크=빨강)
+ <ol>
+  <li>절대경로로 링크 걸기 - 웹사이트 경로(URL)<br>
+   <a href="https://www.naver.com">naver</a>
+   <a href="https://www.w3schools.com/">w3schools.com</a>
+  </li>
+  <li>상대경로로 링크 걸기 - 웹문서(*.htm/*.html)<br>
+     <a href="test06.htm">이미지 수업</a>
+     <a href="test05.htm">form 수업</a> <br>
+     상대경로로 링크 걸기 - 이미지(*.gif/*.jpg/*.png/...)<br>
+      <a href="../img/art.jpg">이미지01</a>
+      <a href="../img/png/infographic.png">이미지02</a>
+
+    <!-- 컨텐츠로 이미지 넣기 
+     <img src="../img/png/infographic.png" alt="infographic"           width="300"> 
+    -->
+        <br>
+     상대경로로 링크 걸기 - 동영상(*.webm/*.ogg/*.mp4/)<br>
+      <a href="../img/trees.mp4">동영상</a>
+        <br>
+     상대경로로 링크 걸기 - 텍스트파일(*.txt)<br>
+       <a href="../부산진구.txt">텍스트파일</a>
+  </li>
+  <li><i>[참고] 웹브라우저가 처리 불가한 내용
+      (한글파일, 압축파일 등)을 링크 걸면 다운로드 됨.</i><br>
+     <a href="../img.zip">*.zip </a>
+  </li>
+ </ol>
+
+<hr id="hr-tgt">
+ <h2><mark>새 탭</mark>에서 링크 열기 (<mark>target="_blank"</mark>) </h2>
+
+ <a href="../img/trees.mp4" target="_blank">동영상(새 탭에서)</a>
+ <a href="https://www.daum.net/" target="_blank">daum</a>
+
+ <h3>target(링크를 여는 방식 지정)의 속성값들</h3>
+ <ul>
+  <li>target="_self" - (기본값)현재 위치에서 링크 열기</li>
+  <li><b>target="_blank" - 새 탭에서 링크 열기</b></li>
+  <li>target="_top" - (프레임구조시)전체 창에서 링크 열기</li>
+  <li>target="_parent" - 부모창(상위창)에서 링크 열기</li>
+ </ul>
+
+  ★이미지무료사이트
+  <nav>
+    <a href="https://pixabay.com/" target="_blank">
+     https://pixabay.com/</a>
+    <a href="https://www.pexels.com/" target="_blank">
+     https://www.pexels.com/</a>
+    <a href="https://morguefile.com/" target="_blank">
+     https://morguefile.com/</a>
+  </nav>
+
+
+ <h2>링크 걸린 이미지</h2>
+ <a href="https://www.daum.net/" target="_blank">
+  <img src="../img/png/daum-logo.png" alt="daum" width="120">
+ </a> 
+ <br>
+
+<a href="http://www.itwillbs.co.kr/" target="_blank">
+ <img src="../img/png/itwill_logo.png" alt="itwill" width="150">
+</a>
+ <br>
+
+<a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">
+ <img src="https://www.w3schools.com/images/colorpicker2000.png"
+ alt="colorpicker" title="절대경로이미지">
+  <!-- src의 값을 사이트에서 이미지에 우측 클릭, '이미지주소복사'하여 
+       절대경로값을 구해옴 -->
+</a>
+
+<p>[ 썸네일이미지 ] <br>
+ 속성 <b>title="..."</b>을 추가하여 
+ 링크이동이나 이미지에 대한 <b>툴팁(풍선도움말)</b>을
+ 지정할 수 있다. <br>
+
+<a href="../img/yellow-wall.jpg" target="_blank" title="원본보기">
+  <img src="../img/yellow-wall.jpg" alt="wall" width="50"           height="50">
+ </a>
+
+ <a href="../img/rufous.jpg" target="_blank" title="원본보기">
+  <img src="../img/rufous.jpg" alt="rufous" width="50"              height="50">
+ </a>
+
+ <a href="../img/header.jpg" target="_blank" title="원본보기">
+  <img src="../img/header.jpg" width="50" height="50" alt="header">
+ </a>
+</p>
+
+ <hr>
+<h2>mailto: 으로 email링크 걸기</h2>
+ 
+ <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a> 
+   <a href="mailto:itreset@daum.net">홍길동</a>
+
+<a href="mailto:class@itwillbs.co.kr"  title="class@itwillbs.co.kr로 email보내기">
+ <img src="../img/png/mail02.jpg" width="50" alt="email"></a>
+
+<hr>
+ <h2>페이지 최상단으로 이동하는 top링크 걸기(임시링크) - "#"</h2>
+  
+ <a href="#">top</a>
+ <a href="#">
+ <img src="../img/png/arrow-up.png" alt="top" width="50"></a>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

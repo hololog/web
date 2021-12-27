@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+ <hr>
+<nav>
+ <ul>
+  <li><a href="test07.htm">링크수업01</a></li>
+  <li><a href="test07-1.htm">링크수업02</a></li>
+  <li><a href="test07.htm#hr-tgt">수업</a>
+          <!-- test07.htm문서의 id가 hr-tgt인 곳으로 이동 -->
+  </li>
+ </ul>
+</nav>
+
+ <hr>
+<h1>a로 내부링크 걸기</h1>
+ <p>페이지가 길어지면 해당 페이지내에서 위나 아래로 이동하는 링크를 걸 수 있다.<br>
+  이동하고자 하는 곳의 tag(태그)에 id를 추가하고 (id값은 고유한 값이므로 주소로 씀) 
+  링크를 걸 때 href의 값에 해당 id를 주소로 활용.(#id)
+ </p>
+
+ <pre>
+  &lt;a href="#abc"&gt; ... &lt;/a&gt; = id가 abc인 곳을 찾아 이동(내려감)
+          ... 
+  &lt;tag id="def"&gt;
+          ...
+          ...
+  &lt;tag id="abc"&gt;
+          ...  
+  &lt;a href="#def"&gt; ... &lt;/a&gt; = id가 def인 곳을 찾아 이동(올라감)
+ </pre>
+
+
+
+
+<h1 id="h1-ph">[ ▣ Photo Gallery ▣ ]</h1>
+<nav> 
+ <ul>
+  <li><a href="#hr01">photo-01</a></li>
+  <li><a href="#hr02">photo-02</a></li>
+  <li><a href="#hr03">photo-03</a></li>
+  <li><a href="#hr04">photo-04</a></li>
+  <li><a href="#hr05">photo-05</a></li>
+  <li><a href="#hr06">photo-06</a></li>
+  <li><a href="#hr07">photo-07</a></li>
+  <li><a href="#hr08">photo-08</a></li>
+  <li><a href="#hr09">photo-09</a></li>
+  <li><a href="#hr10">photo-10</a></li>
+ </ul>
+</nav>
+
+<hr id="hr01">
+ <h2>photo-01</h2>
+ <img src="../img/abend.jpg" alt="abend" height="600">
+ <br> <a href="#h1-ph">GO menu</a> <br><br><br><br><br><br><br>
+ 
+<hr id="hr02">
+ <h2>photo-02</h2>
+ <img src="../img/art.jpg" alt="art" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+
+<hr id="hr03">
+ <h2>photo-03</h2>
+ <img src="../img/away.jpg" alt="away" height="600" id="img-03">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+ 
+<hr id="hr04">
+ <h2>photo-04</h2>
+ <img src="../img/backpack.jpg" alt="backpack" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+
+<hr id="hr05">
+ <h2>photo-05</h2>
+ <img src="../img/bare.jpg" alt="bare" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+ 
+<hr id="hr06">
+ <h2>photo-06</h2>
+ <img src="../img/bastei.jpg" alt="bastei" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+
+<hr id="hr07">
+ <h2>photo-07</h2>
+ <img src="../img/cat.jpg" alt="cat" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+ 
+<hr id="hr08">
+ <h2>photo-08</h2>
+ <img src="../img/cleiton.jpg" alt="cleiton" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+
+<hr id="hr09">
+ <h2>photo-09</h2>
+ <img src="../img/coffee.jpg" alt="coffee" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+ 
+<hr id="hr10">
+ <h2>photo-10</h2>
+ <img src="../img/daria.jpg" alt="daria" height="600">
+ <br><a href="#h1-ph">GO menu</a><br><br><br><br><br><br><br>
+
+
+
+<hr>
+   <a href="#">top</a>
+ <br><br><br><br><br><br><br><br>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

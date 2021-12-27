@@ -1,80 +1,91 @@
-﻿<!DOCtype html>
+﻿<!DOCTYPE html>
 <html> 
  <head>
   <title>form-2</title>
  </head>
  <body>
-  <hr>
-   <nav>
-    <a href="test05.htm">form-1</a>	
-     <a href="test05-1.htm">form-2</a>	   
-   </nav>
-  <hr>
+<hr>
+ <nav>
+  <a href="test05.htm">form-1</a>
+  <a href="test05-1.htm">form-2</a>
+ </nav>
+<hr>
+<h1>[ form-2 ]  html5에서 추가된 input type값들</h1>
+<p>
+</p>
+<form action="test.jsp" method="post">
+ <ol>
+  <li>input type="time" <input type="time"> 
+   시간(오전/오후 시분)을 지정하는 요소 </li>
+  <li>input type="date" <input type="date">날짜(연월일)를 지정하는 요소 <br>
+   <label>Birthday 
+    <input type="date" min="1900-01-01" max="2250-12-31">
+   </label> (min="1900-01-01" max="2250-12-31")
+  </li>
+  <li>input type="datetime-local" <input type="datetime-local">
+   날짜와 시간(연월일 오전/오후 시분)을 지정하는 요소 </li>
+  <li>input type="week" <input type="week"> 날짜(연주)를 지정하는 요소</li>
+  <li>input type="month" <input type="month"> 날짜(연월)를 지정하는 요소</li>
+  <li>input type="number" <input type="number"> 숫자값을 지정하는 요소 <br> 
+   <input type="number" min="0"> (min="0") - 최소값 지정시 min속성 추가<br>
+   <input type="number" max="5"> (max="5") 최대값 지정시 max속성 추가<br>
+   <input type="number" step="30"> (step="30") 증감 간격 지정시 step속성 추가
+   <!--  <input type="number" step="30" min="30" max="300"> -->
+ </li>
+  <li>input type="range" <input type="range"> 범위내의 값을 지정하는 요소</li>
+  <li>input type="tel" 
+  <input type="tel" size="14"> 연락처(전화번호)값을 지정하는 요소.
+   <br>
+   모바일브라우저에서 가상키패드가 숫자로 바뀌고 전화걸기 가능.
+  </li>
+  <li>input type="email" <input type="email"> 연락처(이메일주소)값을 지정하는   요소 <br> 모바일브라우저에서 가상키패드가 @ 등이 나올 수 있고 <br> 
+  email형식의 값이 바른지 브라우저에서 체크함(@유무, @이후값 유무)
+</li>
+  <li>input type="url" <input type="url"> 연락처(웹주소)값을 지정하는 요소<br>  모바일브라우저에서 가상키패드가 http://, .com 등이 나올 수 있고 <br> 
+  웹주소형식의 값이 바른지 브라우저에서 체크함(프로토콜 유무)
+ </li>
+  <li>input type="color" <input type="color"> 색상값을 지정하는 요소</li>
+ </ol>
 
-   <h1>[ fomr-2 ] html5에서 추가된 input type값들</h1>
-     <p>
-     </p>
-       <form action="test.jsp" method="post">
-         <ol>	 
-           <li>input type="time" <input type="time"> 시간(오전/오후 시/분)을 지정하는 요소</li>
-           <li>input type="date" <input type="date"> 날짜(연월일)을 지정하는 요소</li>
-            <label>Birthday 
-             <input type="date" min="1900-01-01" max="2050-12-31">
-            </label> (min="1900-01-01" max="2050-12-31")
-           <li>input type="datetime-local" <input type="datetime-local"> 날짜(연월일)와 시간을 지정하는 요소</li>
-           <li>input type="month" <input type="month"> 날짜(연월)를 지정하는 요소</li>
-           <li>input type="week" <input type="week"> 날짜(연주)를 지정하는 요소</li>
-           <li>input type="number" <input type="number"></li>
-             <ul> 
-              <li><input type="number" min='0'> (min="0")-최소값 지정시 min속성 추가</li>
-	      <li><input type="number" max="8"> (max="8")-최대값 지정시 max속성 추가</li>
-              <li><input type="number" max="8" min="0"> -최대, 최소 동시사용 </li>
-	      <li><input type="number" step="10"> (step="30")-증감 간격 지정시 step속성 추가</li>
-             </ul>
-           <li>input type="range" <input type="range"> 범위내의 값을 지정하는 슬라이드바 <br>
-                  모바일 브라우저에서 가상 키패드가 숫자로 바뀌고 전화걸기 가능.</li>
-           <li>input type="tel" 
-               <input type="tel" size="14"> 전화번호 값을 지정하는요소/모바일 환경에서 </li>
-           <li>input type="url" <input type="url"> 웹주소값을 지정하는 요소<br>
-                  모바일 브라우저에서 가상키패드가 http://, com등이 나올수 있고<br>
-                  웹주소형식의 값이 바른지 브라우저에서 체크함(@유무, @이후값 유무)</li>
-           <li>input type="email" <input type="email"> 이메일 주소 값을 지정하는 요소<br>
-                  모바일 브라우저에서 가상키패드가 @등이 나올수 있고 <br>
-                  email형식의 값이 바른지 브라우저에서 체크함(@유무, @이후값 유무)</li>
-           <li>input type="color" <input type="color"> 색상값을 지정하는 요소</li>
- 	 </ol>
-         <hr>
-         <h1>html5에서 추가된 input속성들</h1>
-          <ol>
-            <li><input type="text" autofocus> autofocus - 자동 포커싱. 해당욧가 입력대시상태로</li>
-            <li><input type="text" autocomplete="on"> autocomplete="on/off" - 자동완성기능을 켜거나 끔<br>
-               <label for="nm">name</label> <input type="text" id="nm" autocomplete="off"></li>
-            <li><input type="text" placeholder="010-1234-5678"> placeholder - " "안에 입력예시나 설명문 등을 지시</li>
-            <li><input type="text" required> required - 필수입력란 </li>
-            <li><input type="text" value="1조" readonly> readonly - 읽기만 가능한 입력 요소지정(입력값전송o)</li>
-            <li><input type="text" value="팀장" disabled> disabled - 사용불가 요소 지정(입력값전송x)</li> 
-            <li><input type="text"></li>
-          </ol>
-          <input type="text" maxlength="8" size="20"> 
-            maxlength="n" - 실제 입력가능한 데이터 길이
-            size="n" - 화면상의 상자 길이 지정
-         <hr>
-          <h1>fieldset, legend로 form요소들을 그룹화하여 나타내기</h1>          
-     	   <p>								
-            비슷한 유형의 폼요소들이나 특정주제의 서로 서로 연관된 폼요소들끼리 그룹화할 때 
-            <br>fieldset</br>태그로 묶어주고 해당 그룹의 제목은 <br>legend</br>태그로 지정.
-           </p>
-            <fieldset>
-             <legend>필수입력</legend>
-             <label>Name <input type="text" required></label><br>
-             <label>Birthday <input type="date" required></label><br>          
-             <label>ID <input type="text" placeholder="영문소문자/숫자조합" required maxlength="8"></label><br>
-             <label>Password <input type="password" placeholder="영문/숫자/특수문자" required></label><br>
-            </fieldset>
-         <hr>
-         <input type="submit">
-         <input type="reset">
-       </form>
+<hr>
+ <h1>html5에서 추가된 input속성들</h1>
+<ol>
+ <li><input type="text" autofocus> autofocus - 자동포커싱. 해당 요소가 입력대기 상태로</li>
+ <li> <input type="text" autocolmplete="on"> autocomplete="on/off" -      자동완성 기능을 켜거나 끔. <br> 
+  <label for="nm">name</label> 
+   <input type="text" id="nm" autocomplete="off">
+ </li>
+ <li> <input type="text" placeholder="010-7777-7777"> 
+  placeholder="***"  - 입력예시나 설명문 등을 지시</li>
+ <li> <input type="text" required> required - 필수입력 요소로 지정</li>
+ <li> <input type="text" value="1조" readonly> readonly 
+  - 읽기만 가능한 입력 요소로 지정 (입력값 전송)</li>
+ <li> <input type="text" value="팀장" disabled> disabled 
+  - 사용불가한 요소로 지정 (입력값 전송 불가) </li>
+</ol>
+ <input type="text" maxlength="8" size="20">
+ <b>maxlength="n"</b> - 실제 입력가능한 데이터 길이 지정(최대값), 
+   size="n" - 화면상의 상자 길이 지정. 
+<hr>
+ <h1>fieldset, legend로 form요소들을 그룹화하여 나타내기 </h1>
+<p>
+ 비슷한 유형의 폼요소들이나 특정 주제의 서로 연관된 폼요소들끼리 그룹화할 때 <br>
+ <b>fieldset</b>태그로 묶어주고 해당 그룹의 제목은 <b>legend</b>태그로 지정.</p>
+
+ <fieldset>
+  <legend>필수입력</legend>
+
+  <label>Name <input type="text" required></label> <br>
+  <label>Birthday <input type="date" required></label> <br>
+  <label>ID 
+   <input type="text" placeholder="영문숫자조합8자이내" maxlength="8"    required>  </label> <br>
+  <label>Password <input type="password" placeholder="영문숫자조합10자이내"  maxlength="10" required></label> 
+ </fieldset>
+<hr>
+
+ <input type="submit">
+ <input type="reset">
+</form>
  </body>
 </html>
 
