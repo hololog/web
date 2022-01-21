@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* 1. text-align 글자 수평정렬 */
+
+ #sec01>p {
+ background-color: #ccc;
+ width: 400px;} 
+
+.ta01 {text-align: left;}
+.ta02 {text-align: center;}
+.ta03 {text-align: right;}
+.ta04 {text-align: justify;}
+.cnt {text-align: center;}
+
+#sec01>table {
+/*  A>B 상위요소A의 바로 한단계 아래의
+   하위요소B를 불러오는(부모자식관계)
+   관계선택자 */	
+border: 1px solid;
+width:500px; height: 100px; }
+
+#sec01 th {
+/*  A B 상위요소A 아래의 모든
+   하위요소B를 불러오는(조상자손관계)
+   관계선택자 */
+   border: 1px solid;}
+#sec01 td {border: 1px solid;}
+
+
+
+ /* 2. text-indent 들여쓰기 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
