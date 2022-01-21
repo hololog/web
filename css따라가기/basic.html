@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>CSS basic</title>
+ <style type="text/css">
+  #int {color: green;}  
+  li {background-color: #ccc;}  
+  #ids {background-color: #ff0;} 
+  .bg-p {background-color: pink;} 
+ </style>
+ <link href="basic.css" rel="stylesheet">
+</head>
+<body>
+<h1>CSS basic</h1>
+ <p class="brdr"> 선택자 {속성:속성값;} </p>
+
+<h2>CSS선택자 대표 3가지</h2>
+ <ul>
+  <li>tag선택자 (tag) - 강제적용, 자동적용. 태그가 같으면 같은 스타일로 적용됨.</li>
+  <li id="ids">id선택자 (#id값) - id값이 중복불가이므로 주로 구조적인 목적에 사용.</li>
+  <li class="bg-p">class선택자 (.class값) - class값이 중복 가능하므로 주로 디자인적인 목적에 사용.
+   (class끼리 조합가능)
+  </li>
+ </ul>
+
+<h2>CSS 적용법 3가지</h2>
+<ul>
+ <li id="ext">External CSS - 외부파일방식. CSS소스를 따로 독립시켜 저장하고
+  웹문서와 연결하여 적용.<br> 통일성 있는 디자인 가능, 유지보수 유리</li>
+ <li id="int">Internal CSS - 내장방식. CSS소스를 웹문서의 head안에 위치해서 적용.
+  <br>해당 페이지에만 적용됨.
+ </li>
+ <li style="color: red;">Inline CSS - 인라인방식. CSS소스를 웹문서의 해당 태그 뒤에 적용.<br>
+  소스가 길어지고 통일성 있는 디자인 불가능, 유지보수 불리.<br>
+  CSS적용 우선순위가 세방식 중 가장 높음. <br>
+  body안의 소스만 수정 가능한 환경일 경우 불가피하게 사용.
+ </li>
+</ul>
+
+
+
+</body>
+</html>
