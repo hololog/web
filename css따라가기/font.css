@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {background-color: #aef;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2 {font-family: 'Jua', sans-serif;}
+
+ /* 주석은 ctrl+shift+/ */
+ 
+ /* 1. font-size 글자 크기 */
+#sec01 {font-size: 10px;}
+
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 12px; }
+.fs03 {font-size: 20px;}
+.fs04 {font-size: 1em;}
+.fs05 {font-size: 0.75em;}
+.fs06 {font-size: 1.25em;}
+  /* em - 상위요소 #sec01의 변화에 같이 따름 */
+.fs07 {font-size: 1rem;}
+.fs08 {font-size: 0.75rem;}
+.fs09 {font-size: 1.25rem;}
+  /* rem - 상위요소 #sec01의 변화에 무관하게 16px기준 */
+
+
+
+ /* 2. font-weight 글자 두께 */
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;}
+.fw10 {font-weight: bold;
+  color: red;}
+.fw11 {font-weight: normal;
+  color: navy; }
+.fw12 {font-weight: normal;}  
+  
+  
+  
+  /* 3. font-style 글자 기울기  */
+  
+.fst01 {font-style: italic;
+   color: red;}  
+.fst02 {font-style: oblique;}  
+.fst03 {font-style: normal;}  
+ .fst04 {font-style: normal;} 
+.fst05:hover {/* A:hover는 요소A에 
+ 마우스를 올렸을 때의 상태를 지정하는
+ 상태선택자 */
+	font-style: italic;}  
+  
+  
+  
+  /* 4.font-family: ;글꼴(서체) */
+.ffm01 {font-family: "Georgia","Times New Roman", serif;} 
+.ffm02 {font-family: "Helvetica", "Verdana", sans-serif;}  
+.ffm03 {font-family: fantasy;}  
+  
+  /* https://fonts.google.com
+  
+font-family: 'Gaegu', cursive;
+font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+   */
+  
+.ffm04 {font-family: 'Gaegu', cursive;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
