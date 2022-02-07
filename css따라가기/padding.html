@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding 요소의 내부여백</title>
+<link href="style.css" rel="stylesheet">
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+<h1>padding 요소의 내부여백</h1>
+
+<h2>padding의 각 방향별 지정 세부속성</h2>
+<ul id="pd-d">
+ <li class="pd-d01">padding-top:n; </li>
+ <li class="pd-d02">padding-right:n;</li>
+ <li class="pd-d03">padding-bottom:n;</li>
+ <li class="pd-d04">padding-left:n;</li>
+</ul>
+
+<h2>padding의 값 갯수별 지정법</h2>
+<ul id="pd-n">
+ <li class="pd-n01">padding:n; 양사방 동시에 같은 값을 적용</li>
+ <li class="pd-n02">padding:n n ; 상하, 좌우가 서로 같은 값</li>
+ <li class="pd-n03">padding:n n n ;
+    상, 좌우가 서로 같은 값, 하의 순으로 적용</li>
+ <li class="pd-n04">padding:n n n n;
+    상, 우, 하, 좌 의 순으로 각각 적용</li>
+</ul>
+
+<section>
+ <h2>input에 padding</h2>
+
+ <input type="text" placeholder="name" class="pd01">
+ <input type="text" placeholder="name" class="pd02">
+ <input type="text" placeholder="name" class="pd03">
+ <input type="text" placeholder="name" class="pd04">
+
+ 
+ <h2>a에 padding으로 링크 반응영역 확장</h2>
+ <nav>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+ </nav>
+  <p>a는 width와 height로 크기 적용 불가!</p>
+  
+ <h2>img에 padding</h2>
+ 
+ <img alt="daria" src="img/daria.jpg" class="pim01">
+ <img alt="daria" src="img/daria.jpg" class="pim02">
+ <img alt="daria" src="img/daria.jpg" class="pim03">
+ <img alt="daria" src="img/daria.jpg" class="pim04"> 
+ <img alt="monster" src="img/png/monster.png" 
+  class="pim05">
+ 
+</section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

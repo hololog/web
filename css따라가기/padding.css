@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+ /* 1.padding의 각 방향별 지정  */
+
+#pd-d {border: 1px solid #c00;
+/* padding-left: 0; 목록의 기본여백은
+ul이나 ol의 padding-left임 */}
+
+#pd-d>li {/* 1. 관계선택자 A>B는 
+상위요소A의 바로 한단계
+아래의 하위요소B를 불러옴(부모자식). 
+
+2. 관계선택자 A B는 
+상위요소A 아래의 모든
+하위요소B를 불러옴(조상자손). */
+border: 1px solid #0a0;}
+
+.pd-d01 {padding-top: 20px;}
+.pd-d02 {text-align: right; 
+padding-right: 20px;}
+.pd-d03 {padding-bottom: 20px;}
+.pd-d04 {padding-left: 20px;}
+
+
+
+/* 2.padding의 값 갯수별 지정 */
+
+#pd-n>li {border: 1px solid #f80;}
+
+.pd-n01 {padding: 2em;}
+.pd-n02 {padding: 2em 25%;}
+.pd-n03 {padding: 1em 20% 0;}
+.pd-n04 {padding: 2em 30% 5em 5%;}
+
+
+
+
+
+.pd01 {padding: 0.8em;}
+.pd02 {padding: 0.8em 1.2em;}
+.pd03 {padding-top: 0.6em;
+ padding-left: 0.6em;}
+
+
+nav>a {background-color: #ccc;
+/* width: 30px; height: 30px;
+ ~ 크기 적용 불가 */
+padding: 6px 12px;
+text-decoration: none;}
+
+
+section>img {width:400px;}
+
+.pim01 {border: 20px solid #367;
+padding: 40px;}
+
+.pim02 {border: 20px outset #367;
+padding: 40px;}
+
+.pim03 {border: 1px solid;
+padding: 24px 24px 160px;}
+
+.pim04 {border: 1px solid;
+border-radius:12px /* 모서리 라운딩 */;
+padding: 24px 24px 180px; 
+box-shadow: 1px 2px 10px #333
+/* 영역의 그림자 */;
+opacity: 0.5 /* 불투명도(0~1사이의 값.
+0은 투명) */;}
+
+.pim04:hover {
+box-shadow: -2px 1px 12px #555;
+opacity: 1;
+transition:1.2s;}
+
+
+.pim05 {border: 1px solid;
+ border-radius: 50%;}
+
+.pim05:hover {width: 100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,13 +29,76 @@ width:500px; height: 100px; }
 
 
  /* 2. text-indent 들여쓰기 */
+ #sec02>h2:hover {
+ text-indent: -20%;} 
+
+.tin01 {text-indent: 30px;}
+.tin02 {text-indent: 3em;}
+.tin03 {text-indent: 30%;}
+.tin04 {text-indent: -100px;}
+.tin04:hover {/* A:hover는
+ A에 마우스오버한 상태일 때 변화를 지정*/
+ text-indent: 0;}
+
+.tin05 {text-indent: 20%;}
+.tin05:hover {
+	text-indent: 50%;}
+
+
+
+ /* 3.text-decoration 글자의 줄들 */
+.tde01 {text-decoration: overline;}
+.tde02 {text-decoration: line-through;}
+.tde03 {text-decoration: underline;}
+.tde04 {font-size:20px;
+ text-decoration: none;
+ background-color: #e05;}
+.tde04:hover {background-color: #0e5;
+	text-decoration: underline;} 
+
+
+
+ /* 4.text-transform 영문 대소문자 변경 */
+.ttr01 {text-transform: none;}
+.ttr02 {text-transform: lowercase;}
+.ttr03 {text-transform: uppercase;}
+.ttr04 {text-transform: capitalize;}
+#sec04>h2 {text-transform: uppercase;}
 
 
 
 
+/* 5.text-shadow: ; 글자 그림자 */
+ #sec05>p {font-size: 40px;
+ font-weight: bold; }
+
+.tsh01 {text-shadow: 2px 3px 5px #333;}
+.tsh02 {text-shadow: -2px -3px 5px #333;}
+.tsh03 {text-shadow:2px 3px 0 #393;}
+.tsh04 {text-shadow:0 42px 0 #393;}
+.tsh05 {text-shadow:2px 2px 4px #333;
+     color: #fff;}
+.tsh05:hover {
+	text-shadow: 0 0 4px #333;}
+
+.tsh06 {padding:2em;
+background-color: #000;	
+color: #000;
+text-shadow: 0 0 1px #9ff; }
+
+.tsh06:hover {
+ text-shadow: 0 0 16px #fdd;	
+ transition:1.3s /* 단순한 에니메이션효과 */;}
 
 
+.tsh07 {padding:2em;
+background-color: #000;	
+color: #000;
+text-shadow: 
+3px 3px 4px #aff, -3px -3px 4px #fa9;}
 
+.tsh08 {color:#fff;
+text-shadow:-2px -1px 3px #333;} 
 
 
 

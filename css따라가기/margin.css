@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+ /* 1. margin 각 방향별 지정 */ 
+
+#mg-d>li {border: 1px solid #07d;}
+
+.mg-d01 {margin-top: 50px;}
+.mg-d02 {margin-right: 50px;}
+.mg-d03 {margin-bottom: 50px;}
+.mg-d04 {margin-left: 50px;}
+
+
+
+/* 2.margin의 값 갯수별 지정 */
+
+#mg-n>li {border: 1px solid #70d;}
+
+.mg-n01 {margin: 100px;}
+.mg-n02 {margin: 100px 20px;}
+.mg-n03 {margin: 10px 20% 50px;}
+.mg-n04 {margin: 20px 30% 2em 15%;}
+
+
+.p01 {background-color: #eaa;
+width: 500px;
+/* margin-left: auto;
+   margin-right: auto; */
+margin: 0 auto;}
+
+.p01>span {white-space:pre; 	
+ color: #900;
+ font-weight: bold;} 
+
+#login {/* border: 1px solid; */
+ margin-top: 4em;
+ margin-left: 2em;}
+
+/* label { width: 80px;} label은 
+줄이 안바뀌는 요소라서 크기 적용 불가함 */
+
+.id {margin-left: 54px /* 첫 label의
+ 위치를 우측으로*/;}
+
+
+nav {margin-top: 5em;}
+
+nav>a {border: 1px solid;
+	padding: 0.5em 0.8em;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
