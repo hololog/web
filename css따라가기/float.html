@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>float</title>
+<link href="style.css" rel="stylesheet">
+<link href="float.css" rel="stylesheet">
+</head>
+<body>
+<header>
+ <nav id="menu01">
+  <ul id="mn">
+   <li><a href="#sec01">sec01</a></li>
+   <li><a href="#sec02">sec02</a></li>
+   <li><a href="#sec03">sec03</a></li>
+   <li><a href="#sec04">sec04</a></li>
+  </ul>
+ </nav>
+ 
+ <nav id="menu02">
+  <ul id="mn02">
+   <li><a href="#sec01">sec01</a></li>
+   <li><a href="#sec02">sec02</a></li>
+   <li><a href="#sec03">sec03</a></li>
+   <li><a href="#sec04">sec04</a></li>
+  </ul>
+ </nav>
+</header>
+
+
+
+<h1>float:left/right; 띄워서 ~에 </h1>
+<ul>
+ <li class="fl">float:left; 요소를 띄워서 왼쪽에 ~ </li>
+ <li class="fr">float:right; 요소를 띄워서 오른쪽에 ~ </li>
+</ul>
+
+<h1 class="clear">clear: both; float의 영향을 해제</h1>
+<p>
+ 나란히 올 수 없는 요소들을 나란히 배치하기 위해 float을 주면
+ 그 요소들은 떠버리고 원래 차지하던 공간이 비게 됨. <br>
+ 그 빈공간을 메우기위해 그 다음 요소가 밀고 올라오는데<br>
+ 이때 clear: both;를 적용하면<br>
+ float의 영향을 해제해서  밀고 올라온 요소를 제자리로 보낼 수 있음. 
+</p> 
+
+<section id="sec01">
+ <h2>img에 float:left; <i>적용하여 그림 주변을 
+  글자가 자연스럽게 감쌈</i></h2>
+
+ <p> <img alt="pineapple" src="img/pineapple.jpg"> 
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+		</p>
+</section>
+
+<section id="sec02">
+ <h2>img에 float:right; <i>적용하여 그림 주변을 
+  글자가 자연스럽게 감쌈</i></h2>
+
+ <p> <img alt="pineapple" src="img/pineapple.jpg"> 
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+		</p>
+</section>
+
+
+<section id="sec03" class="clear">
+ <h2>p에 float:left; <i>적용 </i></h2>
+
+ <p class="p01">[p-1]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+ <p class="p02">[p-2]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+ <p class="p03">[p-3]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+</section>
+
+
+<section id="sec04">
+ <h2>p에 float:right; <i>적용시 순서가 뒤바뀜 주의!</i></h2>
+
+ <p class="p04">[p-4]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+ <p class="p05">[p-5]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+ <p class="p06">[p-6]
+ Lorem ipsum dolor sitmet,
+			consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+			interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+			venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+			vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+			ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis
+			urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+			nisi, sed ullamcorper ipsum dignissim ac...
+ </p>
+</section>
+
+</body>
+</html>
