@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="style.css" rel="stylesheet">
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+<nav id="mn-nav">
+ <ul>
+  <li><a href="#sec01">sec01</a></li>
+  <li><a href="#sec02">sec02</a></li>
+  <li><a href="#sec03">sec03</a></li>
+  <li id="mn04"><a href="#sec04">sec04</a>
+   <ul id="sub">
+    <li><a href="#h2-dis">sub01</a></li>
+    <li><a href="#h2-vis">sub02</a></li>
+   </ul>  
+  </li>
+ </ul> 
+</nav>
+
+
+<h1>display 요소가 화면에 나타나는 방식(성격) 지정</h1>
+<ul>
+ <li>display:inline; block인 요소를 inline으로 변경</li>
+ <li>display:block;  inline인 요소를 block으로 변경</li>
+ <li>display:inline-block; 어떤 요소든지  
+     inline과 block의 특징을 결합한 방식으로 변경</li>
+ <li>display:none; 요소가 화면에서 사라짐</li>
+</ul>
+
+<h3>inline, block의 특징</h3>
+ <ol>
+  <li>inline - 한 줄에 나란히 옴. (자동으로 줄 안바뀜) <br> 
+   크기 적용 불가, margin은 위아래 적용 불가.
+  </li>
+  <li>block - 다른 요소와 나란히 올 수 없음. <br> 
+   크기 적용, margin 모두 적용.
+  </li>
+ </ol>
+
+<section id="sec01">
+ <h2>display:inline; block요소를 inline으로 변경</h2>
+
+ <p class="bl">[ block ] p tag</p>
+ <aside class="bl">[ block ] aside tag</aside>
+ <div class="bl">[ block ] div tag</div>
+</section>
+
+<section id="sec02">
+ <h2>display:block; inline요소를 block으로 변경</h2>
+
+ <a href="#" class="in">[inline] a tag</a>
+ <b class="in">[inline] b tag</b>
+ <span class="in">[inline] span tag</span>
+</section>
+
+<section id="sec03">
+ <h2>display:inline-block;
+ 요소를 inline과 block의 특징을 결합한 방식으로 변경</h2>
+ 
+ <p>[ block ] p tag</p>
+ <aside>[ block ] aside tag</aside>
+ <div>[ block ] div tag</div>
+
+ <a href="#">[inline] a tag</a>
+ <b>[inline] b tag</b>
+ <span>[inline] span tag</span>
+</section>
+
+
+ <nav id="pg">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a> 
+  <b>5</b> 
+</nav>
+
+<section id="sec04">
+ <h2 id="h2-dis">display:none; 요소가 화면에서 사라짐
+  <i>요소의 공간도 없어짐</i></h2>
+ 
+ <p class="p01">[ block ] p-1 tag</p>
+ <p class="p02">[ block ] p-2 tag</p>
+ <p class="p03">[ block ] p-3 tag</p>
+ 
+ <b class="b01">[inline] b-1 tag</b>
+ <b class="b02">[inline] b-2 tag</b>
+ <b class="b03">[inline] b-3 tag</b>
+ 
+ <hr>
+ <h2 id="h2-vis">visibility:hidden; 요소가 화면에서 사라짐
+  <i>요소의 공간은 남기고 없어짐</i></h2>
+ 
+ <p class="p04">[ block ] p-4 tag</p>
+ <p class="p05">[ block ] p-5 tag</p>
+ <p class="p06">[ block ] p-6 tag</p>
+ 
+ <b class="b04">[inline] b-4 tag</b>
+ <b class="b05">[inline] b-5 tag</b>
+ <b class="b06">[inline] b-6 tag</b>
+ 
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

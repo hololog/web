@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background-image</title>
+<link href="style.css" rel="stylesheet">
+<link href="bgimg.css" rel="stylesheet">
+</head>
+<body>
+<h1>background - 배경</h1>
+<ol id="list">
+ <li>background-color: ; 배경 색상</li>
+ <li>background-image:url("이미지경로"); 배경 이미지</li>
+</ol>
+
+
+<h1>background-image의 속성들</h1>
+<ul id="list-1">
+ <li>background-repeat: ; 반복 지정
+  <ol>
+   <li>repeat 기본값. 양사방 반복 </li>
+   <li>repeat-x 가로로만 반복 </li>
+   <li>repeat-y 세로로만 반복 </li>
+   <li>no-repeat 반복 안함 (한번만)</li>
+  </ol>
+ </li>
+ <li>background-size: ; 크기 지정
+  <ol>
+   <li>Xn Yn 가로 세로 순으로 직접 지정</li>
+   <li>cover 영역을 이미지 하나로 다덮기
+    (이미지가 잘려나갈 수도 있음)</li>
+   <li>contain 이미지 하나로 영역을 가로나 세로에
+   최대한 맞춰서 덮기 (이미지가 잘려나가지 않음)</li>
+  </ol>
+ </li>
+ <li>background-position: ; 위치 지정
+  <ol>
+   <li>Xn Yn 가로 세로 순으로 직접 지정</li>
+   <li>left/center/right top/center/bottom
+    방향값을 조합하여 지정
+   </li>
+  </ol>
+ </li>
+ <li>background-attachment: ; 고정여부 지정
+  <ol>
+   <li>scroll</li>
+   <li>fixed</li>
+   <li>local</li>
+  </ol>
+ </li>
+</ul>
+
+<div id="bd-box">
+ <h2>background-image 2개 적용하기</h2>
+ <p id="db">
+  background-image:url("이미지1경로")<b>,</b> url("이미지2경로");<br>
+   배경 이미지의 경로를 <b>,</b>로 두번 등록하고 
+   나머지 속성들도 <b>,</b>로 각각 적용 가능.
+ </p>
+</div>
+
+
+<section> 
+<h2>background-attachment: ; 고정여부 지정</h2>
+ <div id="txt-box">
+  scroll - 자신의 영역 스크롤바에는 고정/브라우저 스크롤바에는 스크롤.
+  fixed  - 자신의 영역 스크롤바와 브라우저 스크롤바에 모두 고정.
+  local  - 자신의 영역 스크롤바와 브라우저 스크롤바에 모두 스크롤.
+ </div>
+ <p id="sc">
+  background-attachment:scroll; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  background-attachment:scroll; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <img alt="away" src="img/away.jpg">
+ </p>
+ <p id="fx">
+  background-attachment:fixed; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  background-attachment:fixed; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <img alt="away" src="img/away.jpg">
+ </p>
+ <p id="lc">
+  background-attachment:local; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  background-attachment:local; 고정여부 지정 <br>
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <img alt="away" src="img/away.jpg">
+ </p>
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+p {border: 1px solid red;}
+p>span {font-size: 1.5em;
+font-weight: bold;
+text-transform: uppercase;}
+
+.p-a, .p-b, .p-c {
+	background-color: #ccc;
+	width: 30%;
+	float: left;
+	margin-right: 2%;
+	padding: 0.8em;
+}
+
+.p-d {background-color: #fcc;
+	clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

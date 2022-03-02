@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+#mn-nav li {border: 1px solid #f00;
+display: inline-block /* 메뉴를 나란히 배치*/;
+vertical-align: top
+ /* 한줄에 나란히오는(inline)요소끼리의 수직정렬
+ - 위로  */; }
+
+#sub {border: 1px solid #0a0;
+	display: none /* sub메뉴숨김 */; 
+    padding-left: 0; }
+    
+#mn04:hover>#sub {display: block
+ /* 주메뉴에 오버시 sub메뉴보임 */ ;}
+
+#sub>li {display: block 
+  /* sub메뉴를 세로형으로 배치 */;}
+
+ /* 1.display:inline ;*/
+.bl {border: 1px solid #900;
+width: 300px; height: 30px;
+margin: 50px; 
+display: inline;}
+
+#sec01:hover>.bl {
+ display: block;}
+
+
+/* 2.display:block; */
+.in {border: 1px solid #009;
+width:300px; height: 30px; 
+margin: 50px;
+display: block;}
+
+#sec02:hover>.in {
+ display: inline;}
+
+
+
+/* 3. display:inline-block; */
+
+#sec03>*:not(h2) /* A:not(B)는
+부정선택자. B만 빼고 A를 지정. */ {
+border: 1px solid #090;
+width: 300px; height: 30px;
+margin: 50px;
+display: inline-block; }
+
+
+
+#pg>a {background-color: #ccc;
+width: 50px; height: 50px;
+display: inline-block;
+text-align: center; 
+/* vertical-align: middle;
+높이가 다른 inline요소들끼리의 수직정렬 지정.
+(테이블의 칸(셀)내에서는 셀 내의 글자 수직정렬 지정 가능)
+ */
+line-height: 50px
+/* 행간값=높이값으로 지정하여
+수직 중앙에 정렬. */; 
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;} 
+
+
+ /* 메뉴에서 링크의 상태별 속성 변화
+ 1.[평상시]없이 2.[변화시]만 적용 불가!
+ 소스 순서는 1.[평상시]를 먼저 기입
+  */
+  
+#pg>a:link, #pg>a:visited 
+ /* 1.[평상시] 초기링크상태, 방문한링크상태를 지정 */ {
+ background-color: #ccc;
+ color: #000;	}
+ 
+#pg>a:hover, #pg>a:active
+ /* 2.[변화시] 마우스오버상태, 활성화링크상태를 지정 */ {
+ background-color: #fcc;
+ color: #722;
+ transition:1s /* 단순한 애니효과 */;
+ }
+
+
+
+/* 4.display:none; */
+
+h2>i {font-size: 0.8em;
+color: #f00;}
+
+.p02 {border: 3px solid #a00;
+display: none; }
+
+#sec04:hover>.p02 {
+display: block;}
+
+
+.b01 {border: 3px solid #00a;
+display: none; }
+
+#sec04:hover>.b01 {
+display: inline;}
+
+#sec04:hover>h2 {
+	display: none;}
+
+
+ /* visibility:hidden; */
+.p05 {border: 3px solid #0a0;
+visibility: hidden;}
+
+#sec04:hover>.p05 {
+visibility: visible;}
+
+
+.b04 {border: 3px solid #0a0;
+visibility: hidden;}
+
+#sec04:hover>.b04 {
+visibility: visible;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+ /* 
+ 
+  * { 선택자 *는 전체선택자임.
+    웹페이지의 모든 요소를 다 불러옴.
+    margin:0; 
+    padding: 0;
+    여백 초기화}
+    
+ */
+body {
+ margin:0;
+ background-color: #acd;
+ color: #235;
+ background-image:url("img/cleiton.jpg"), url("img/desert.jpg");
+ background-repeat: no-repeat;
+ background-size:  400px 700px ; 
+ background-position: 30% bottom, 70% 0;
+ background-attachment:   scroll, fixed;}
+
+   /* [목록의 모양을 이미지로 변경하기] */
+#list {list-style: url("img/gif/face.gif");
+ /* 방법 1. 목록 속성 - url값에 이미지 등록 */}
+
+ /* 방법 2. 배경 이미지 응용 */
+#list-1 ol {list-style: none /* 
+        2-1. 기본 목록의 모양 제거 */;}
+
+#list-1 ol>li {/* border:1px solid red; */
+background-image: url("img/gif/arrow.gif")
+    /* 2-2.배경 이미지를 지정 */;
+background-repeat: no-repeat 
+    /* 2-3.배경 이미지 한번만 나오게 */;
+background-position: left 10px
+   /*  2-4. 수직위치 변경 */;
+padding-left:16px
+    /* 2-5. 배경 이미지와 겹친 
+           글자를 우측으로 이동*/;  }
+
+#list-1 ol>li:hover {
+background-size: 13px 16px;	
+background-position:2px 6px }
+
+ol {margin-bottom: 3em;}
+
+li {line-height:1.8;
+margin-bottom: 1.5em;}
+
+#bd-box {/* border:1px solid red; */
+background-color: rgba(255,255,255,0.7);
+width: 600px; 
+padding: 20px; 
+margin: 3em auto
+/* 항상 수평 정중앙에 위치 */; }
+
+#db>b {
+ color: #f00;
+ font-size: 1.2em; }
+
+
+ /* 특정 요소 영역에
+ background-attachment 적용*/
+
+#txt-box {
+ white-space: pre
+ /* 공백처리 - pre태그처럼
+ 소스 그대로 */; 	
+ font-weight: bold;
+ }
+
+section>p {
+ border: 6px double #459;
+ margin-right:50px;
+ padding: 1em;	
+ width: 450px;
+ height: 300px;
+ display: inline-block
+  /* 요소들을 나란히 배치 */;
+ overflow: auto
+  /* 영역에 스크롤바 생성*/;
+ background-image: url("img/bastei.jpg");
+ background-size: cover;
+ background-position: 0 60%;
+ color: #fff;} 
+
+#sc {background-attachment: scroll;}
+#fx {background-attachment: fixed;}
+#lc {background-attachment: local;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
