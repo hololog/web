@@ -7,6 +7,28 @@
 <link href="float2.css" rel="stylesheet">
 </head>
 <body>
+
+<h1>box-sizing 요소의 크기 계산법</h1>
+<div id="cont">box-sizing: content-box; 기본값.
+    요소의 크기(width,height)에 컨텐츠만 포함됨.
+    * padding이나 border가 들어가면 실제 영역이 더 커짐.
+</div> 
+<div id="bord">box-sizing: border-box;
+	요소의 크기(width,height)에 padding과 
+	border를 포함하는 계산법.
+    * padding이나 border가 들어가도 실제 영역이 커지지않음.
+</div>
+
+<h2>clear 시키는 3가지 방법 (float의 영향을 해제)</h2>
+<div class="pre">
+ 1. 요소에 직접 clear: both; 추가
+ 2. .clear {clear: both;}를 만들어 두고
+    요소에 class="clear" 추가
+ 3. 요소 위에 clear용도의 빈 div추가	
+	(div class="clear")
+</div>
+
+<hr>
 <h1>float-2</h1>
 <p class="p-a"><span>[a]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
 		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
@@ -35,7 +57,7 @@
 		hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
 		ipsum dignissim ac...
 </p>
-<p class="p-d"><span>[d]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
+<p class="p-d clear"><span>[d]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
 		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
 		egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
 		nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
@@ -64,7 +86,7 @@
 		ipsum dignissim ac...
 </p>
 
-<p class="p-g"><span>[g]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
+<p class="p-g clear"><span>[g]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
 		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
 		egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
 		nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
@@ -73,6 +95,32 @@
 		hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
 		ipsum dignissim ac...
 </p>
+<p class="p-h"><span>[h]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
+		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+		egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+		nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+		
+</p>
+<p class="p-i"><span>[i]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
+		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+		egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+		nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+		
+</p>
+<div class="clear"></div>
+<p class="p-j"><span>[j]</span> <br> Lorem ipsum dolor sitmet, consectetur adipiscing
+		elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+		egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+		nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+		
+</p>
 
 </body>
 </html>
+
+
+
+
+
+
+

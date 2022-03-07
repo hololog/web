@@ -1,6 +1,26 @@
 @charset "UTF-8";
 
-p {border: 1px solid red;}
+#cont, #bord {border:10px dashed #5e0;
+ width: 500px; height: 150px; 
+ padding: 1em;
+ white-space: pre;}
+
+#cont {background-color: #f88;}
+ 
+#bord {background-color: #88f;
+ box-sizing: border-box;
+ font-weight: bold;}
+
+
+.pre {white-space: pre
+ /* pre태그처럼 공백을 그대로 살림 */;} 
+
+
+.clear {clear: both;}
+
+p {border: 1px solid red;
+padding: 0.8em; }
+
 p>span {font-size: 1.5em;
 font-weight: bold;
 text-transform: uppercase;}
@@ -10,19 +30,29 @@ text-transform: uppercase;}
 	width: 30%;
 	float: left;
 	margin-right: 2%;
-	padding: 0.8em;
+	box-sizing: border-box
+	/* width 30%에 padding과 
+	border를 포함하는 계산법 */;
 }
 
-.p-d {background-color: #fcc;
-	clear: both;}
+.p-d {background-color: #fcc;}
+
+.p-e {float: left;
+width: 25%;}
+
+.p-f {float: right;
+width: 25%;}
+
+.p-g {
+background-color: #cfc;}
 
 
+.p-h {float: left;
+width: 30%;}
+.p-i {float: right;
+width: 30%;}
 
-
-
-
-
-
+.p-j {background-color: #aff; }
 
 
 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="style.css" rel="stylesheet">
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position 요소의 위치 지정법</h1>
+<ul>
+ <li>position:static; 기본값. 변화 없음</li>
+ <li>position:relative; 현재 위치에서 ~로</li>
+ <li>position:absolute; 상위요소를 기준으로 ~로</li>
+ <li>position:fixed; 브라우저를 기준으로 ~ 고정</li>
+ <li>position:sticky; relative와 fixed의 믹스</li>
+</ul>
+
+<section id="sec05">
+  <h2>position:sticky; relative와 fixed의 믹스</h2>
+  <p style="width: 500px;">sticky적용할 요소는 body이외의 다른 상위요소가 없어야 적용됨</p>
+
+</section>
+
+<section id="sec01">
+ <h2>position:static; 기본값. 변화 없음</h2>
+ 
+  <p>position:static; left: 800px;</p>
+</section>
+
+<section id="sec02">
+ <h2>position:relative; 현재 위치에서 ~로</h2>
+ 
+  <p class="re01">position:relative; <br> left: 800px;</p>
+  <p class="re02">position:relative;<br> right: 400px;</p>
+  <p class="re03">position:relative;<br> top:300px;</p>
+  <p class="re04">position:relative;<br> bottom: 300px;</p>
+  <p class="re05">position:relative;<br>
+           left: 900px;  bottom: 400px;</p>
+  <p class="re06">position:relative;<br>
+  left: 900px; top:200px;
+  </p>
+</section>
+
+
+<section id="sec03">
+ <h2>position:absolute; 상위요소를 기준으로 ~로</h2>
+ 
+  <p class="ab01">position:absolute;<br>left: 800px;</p>
+  <p class="ab02">position:absolute;<br>top:30px;</p>
+  <p class="ab03">position:absolute;<br>right: 30px;</p>
+  <p class="ab04">position:absolute;<br>right: 0; bottom: 0;</p>
+  <p class="ab05">position:absolute;<br>top:500px; left: 600px;</p>
+
+  <div class="div01">div01</div>
+  <div class="div02">div02</div>
+  <div class="div03">div03</div>
+  <div class="div04">div04</div>
+  <span>z-index:n;요소들이 겹칠때 상대적으로 큰값을 가지면 위로 올라옴(z축)
+    (태그추가시 자동으로 값은 1씩 증가함, 음수도 가능)
+  </span>
+</section> 
+
+<section id="sec04">
+  <nav id="quick">
+    <ul>
+      <li><a href="#sec01">position:static;</a></li>
+      <li><a href="#sec02">position:relative;</a></li>
+      <li><a href="#sec03">position:absolute;</a></li>
+      <li><a href="#sec05">position:sticky;</a></li>
+      <li><a href="#">top</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+
+
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

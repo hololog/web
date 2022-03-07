@@ -3,160 +3,167 @@
 * {margin: 0; 
    padding: 0;}
 
-header {
-   height: 200px; 
-   background-image: url("../img/backpack.jpg");
-   background-size: cover;
-}
+header {height: 200px; 
+background-image: url("img/backpack.jpg");
+background-size: cover;}
 
 #menu01 {overflow: hidden;}
-#mn {
-   border: 1px solid #0a0;
-   list-style: none;
-   margin: 150px auto 0 auto;/* 중앙 메뉴 구현시 */
-   width: 400px;
-}
 
-#mn>li{
-   background-color:rgba(0,0,0,0.6);
-   float: left /* 메뉴들을 나란히 배치 */;
-   width: 100px;
-   height: 30px;
-   text-align: center;
-   line-height:30px /* 수직 중앙 */;
-}
+#mn {list-style: none /* 목록의 기본모양 제거 */;
+border: 1px solid #0a0;
+margin: 150px auto 0 auto /* 중앙 메뉴 구현시 */;
+width: 400px;}
 
-#mn a:link, #mn a:visited {/* 1. 링크평상시
-   (초기링크, 방문한링크) */
-   color: #fff; 
-	text-decoration: none;/* 링크걸린 글자의 밑줄 제거*/
-}
-#mn a:hover, #mn a:active {/* 2. 변화시
-   (마우스오버시, 활성화링크) */
-   color: #ff0;
-}
+#mn>li {/* border: 1px solid red; */
+ background-color:rgba(0,0,0,0.6);
+ float: left /* 메뉴들을 나란히 배치 */;
+ width: 100px;
+ height: 30px;
+ text-align: center;
+ line-height:30px /* 수직 중앙 */; }
 
-/* ★ 메뉴 상태작업 중 주의!
+
+
+#mn>li>a:link, #mn>li>a:visited/* 1. 링크평상시
+ (초기링크, 방문한링크) */ {
+	color: #fff; 
+	text-decoration: none
+	 /* 링크걸린 글자의 밑줄 제거*/;}
+
+#mn>li>a:hover, #mn>li>a:active /* 2. 변화시
+ (마우스오버시, 활성화링크) */{
+	color: #ff0; }
+
+ /* ★ 메뉴 상태작업 중 주의!
   1. 링크평상시 다음에    2. 변화시 소스가 위치해야하고,
   1. 링크평상시 소스없이  2. 변화시 소스만 있으면 안됨
  
   */
 
 
+ 
   /* 우측 메뉴 구현시 */
-#mn02{
-   border: 5px solid #00f;
-   list-style: none;
-   float: right;
-   /* 개별 메뉴를 감싼 부모ul을 우측에~ */
-}
-#mn02>li{
-   border: 1px solid red;
-   float: left /* 개별 메뉴들은 나란히 배치 */; 
-   background-color: #aa3;
-   width: 100px; height: 30px;
-}
-#mn02>li:hover{
-   background-color: #3aa;
-}
-#mn02 a {
-   border: 1px solid blue;
-}
-#mn02 a:link, #mn02 a:visited {
-   color: #070;
-   text-decoration: none;
-}
-#mn02 a:hover, #mn02 a:active {
-   color: #730;
-   font-weight: bold;
-}
-.fl,.fr {
-  border: 1px solid;
-  width: 300px;
-  padding: 2em 0 2em 1em;
-  font-weight: bold;
-  font-size: 1.05em;
-}
-.fl {
-  background-color: #4ff;
-  float: left;
-  margin-bottom: 5em;
-}
-.fr {
-  background-color: #f44;
-  float: right;
-}
-.clear {
-  clear: both
-  /* float의 영향을 해제해서 
- 밀고 올라온 요소를 제자리로 보냄 */
-}
-section>h2>i {
-  color: #339;
-  font-size: 0.7em;
-  font-weight: normal;
-  font-style: normal;
-}
- /* 1.img에 float:left;  */
-#sec01 {
-  float: left;
-  /* 나란히 배치 왼쪽에 */
-  width:40%;
-  overflow:hidden;
-  /* float적용된 자식이
-빠져나간 부모에게 height: 600px;로
-직접 높이값을 주거나 hidden으로
- 부모의 형태를 유지시킴  */
-}
-#sec01 img {
-  float: left;
-  margin-right: 1em;
-}
- /* 2.img에 float:right; */
-#sec02 {
-   float: right
-   /* 나란히 배치 오른쪽에 */;
-   width:40%;
-   overflow:hidden;
-}
-#sec02 img {
-  float: right;
-  margin-left: 1em;
-}
-#sec02>p {
-  text-align: right;
-}
-/* 3. p에 float:left; */
-#sec03 {
-   overflow: hidden;
-} 
-#sec03>p {
-  border: 1px solid;
-  padding: 1em;
-  float: left;
-}
-.p01 {
-   color: #f00;
-   width: 30%;
-}
-.p02 {
-   color: #0f0;
-   width: 18%;
-}
-.p03 {
-   color: #00f;
-   width: 18%;
-}
+#mn02 {border: 5px solid #00f;
+ list-style:none;
+ float: right /* 개별 메뉴를 감싼
+ 부모를 우측에~ */;  } 
+ 
+#mn02>li {border: 1px solid red;
+ float: left /* 개별 메뉴들은 나란히 배치 */; 
+ background-color: #aa3;
+ width: 100px; height: 30px;}
 
-#sec04{
-   overflow: hidden;
-}
-#sec04>p{
-   border: 2px solid;
-   float: right;
-   width: 20%;
-}
+#mn02>li:hover {background-color: #3aa;}
+
+#mn02 a {border: 1px solid blue;
+ width: 100px; height: 30px;
+ display: block a,링크영역의 크기를
+ 적용하기 위해 성격 바꿈;
+ text-align: center;
+ line-height:30px; 
+ /* padding: 7px 20px; 
+  a ,링크 영역의 공간을 넓히는 방법*/}
+
+#mn02 a:link, #mn02 a:visited {
+ color: #070;
+ text-decoration: none;}
+
+#mn02 a:hover, #mn02 a:active {
+ color: #730;
+ font-weight: bold;}
+
+
+
+
+.fl, .fr {border: 1px solid;
+width: 300px;
+padding: 2em 0 2em 1em;
+font-weight: bold;
+font-size: 1.05em;}
+
+.fl {background-color: #4ff; 
+ float: left;}
+.fr {background-color: #f44;
+ float: right;
+ margin-bottom: 5em; }
+
+.clear {clear: both
+ /* float의 영향을 해제해서 
+ 밀고 올라온 요소를 제자리로 보냄 */;}
+
+section>h2>i {color:#339;
+ font-size: 0.7em;	
+ font-weight: normal;
+ font-style: normal; }
+
+#sec01 {float: left
+/* 나란히 배치 왼쪽에 */;
+width:40%; }
+#sec02 {float: right
+/* 나란히 배치 오른쪽에 */;
+width:40%;}
+
+ /* 1.img에 float:left;  */
+#sec01 {/* float적용된 자식이
+빠져나간 부모에게 height: 600px;로
+직접 높이값을 주거나 */
+ overflow:hidden /* 로
+ 부모의 형태를 유지시킴  */; }
+
+#sec01 img {float: left;
+margin-right: 1em;}
+
+
+ /* 2.img에 float:right; */
+#sec02 {overflow: hidden;}
+
+#sec02 img {float: right; 
+ margin-left:1em; }
+
+#sec02>p {text-align: right;}
+
+
+
+ /* 3. p에 float:left; */
+#sec03 {overflow: hidden;} 
+ 
+#sec03>p {border: 1px solid;
+padding: 1em;
+float: left;}
+
+.p01 {color: #f00;
+ width: 30%;}
+.p02 {color: #0f0;
+ width: 18%;}
+.p03 {color: #00f;
+ width: 18%;}
+
+
+
+
+ /* 4. p에 float:right; */
+#sec04 {overflow: hidden;}
+
+#sec04>p {border: 2px solid;
+ float:right; 
+ width: 20%;}
+
 .p04 {color: #f70;}
 .p05 {color: #7f0;}
 .p06 {color: #07f;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

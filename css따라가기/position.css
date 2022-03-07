@@ -1,0 +1,157 @@
+@charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+section>p {
+ background-color: #ecc;
+ width: 200px; height: 50px;}
+
+
+  /* 1. position:static; */
+ #sec01>p {
+ position: static;
+ left: 800px;}
+
+
+ /* 2. position:relative;  */
+
+.re01 {position: relative;
+left: 800px;}
+
+.re02 {position: relative;
+right: 400px;}
+
+.re03 {position: relative;
+ top:300px;}
+
+.re04 {position: relative;
+ bottom: 300px;}
+
+.re05 {position: relative;
+ left: 900px; 
+ bottom: 400px;}
+
+#sec02:hover>.re06 {
+ position: relative;
+ left: 900px; top:200px;}
+
+
+
+ /*3 position:absolute; */
+#sec03 {height:600px;
+	position: relative;}
+
+
+.ab01 {position: absolute;
+left: 800px;}
+
+.ab02 {position: absolute;
+top:30px;}
+
+.ab03 {position: absolute;
+right: 30px;}
+
+.ab04 {position: absolute;
+right: 0; bottom: 0;
+margin: 0;}
+
+.ab05 {position: absolute;
+top:0; left: 0;}
+
+#sec03:hover>.ab05 {
+ top:500px; left: 600px;	
+ transition:1.5s;}
+
+
+
+#sec03>div {
+    border: 1px solid;
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.div01 {
+    background-color: #0ad;
+    left: 0;
+    top: 200px;
+    z-index: 999999;
+}
+.div02 {
+    background-color: #ad0;
+    left: 100px;
+    top: 250px;
+    transition: 1.3s;
+}
+.div03 {
+    background-color: #d0a;
+    left: 200px;
+    top: 300px;
+    transition: 1.3s;
+}
+.div04 {
+    background-color: #a7d;
+    left: 300px;
+    top: 350px;
+    transition: 1.3s;
+}
+
+#sec03:hover>div {
+    left: 0;
+    top: 200px;
+    transition: 1.3s;
+}
+
+#sec03>span {
+    position: relative;
+    top: 400px;
+    font-weight: bold;
+}
+
+/* 4.position:fixed */
+#quick {
+    border-left: 10px solid #f00;
+    border-radius: 20px 0 0 20px;
+    /* border: 1px solid; */
+    background-color: #000;
+    width: 150px;
+    position: fixed;
+    right: -150px;
+    bottom: 150px;
+    transition: 0.5s;
+
+}
+#quick:hover {
+    right: 0;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#quick>ul {
+    border: 1px solid red;
+    list-style: none;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
+#quick a:link, #quick a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+#quick a:hover, #quick a:active {
+    color: #ff0;
+}
+
+#sec04>div {
+    white-space: pre;
+}
+
+/* 5.position: sticky */
+
+#sec05 {
+    position: sticky;
+    top:0px;
+    z-index: 99999;
+    background-color: #097;
+}
+

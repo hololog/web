@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+    font-size: 18px;
+    color: #333;
+}
+
+h2 {
+    border-bottom: 5px solid #333;
+    padding: 1em;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        font-size: 20px;
+    }
+    h2 {
+        border-bottom: 3px solid #a49;
+    }
+    p {
+        background-color: #aef;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    body {
+        font-size: 22px;
+    }
+    h2 {
+        border-bottom: 4px solid;
+        color: #a49;
+    }
+    p {
+        background-color: #5fc;
+        color: #072;
+    }   
+}
+
+@media screen and (orientation:landscape) {
+    body {
+        background-color: #eee;
+    }
+}
