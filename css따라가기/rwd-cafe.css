@@ -48,6 +48,7 @@ header>nav li {
     /* border: 1px solid #f00; */
     display: inline-block;
     /* float: left; */
+     /* 메뉴들을 나란히 배치(가로형 메뉴) */
     font-size: 0.8em;
     margin: 5px 15px;
     font-family: "", cursive;
@@ -65,6 +66,7 @@ section {
     /* 자식의 위치 기준이 되기위한 설정 */
 }
 section:nth-of-type(2n) {
+    /* 짝수번째 section 설정*/
     background-color: #eee;
 }
 .pg-title {
@@ -103,6 +105,8 @@ footer>p {
     /* border: 1px solid #0f0; */
     text-align: center;
     line-height: 100px;
+     /* 영역의 높이값과 행간값을 일치시켜
+ 수직 중앙에 정렬 */
     font-family: "", ;
     font-size: 1.5em;
 }
@@ -119,8 +123,13 @@ footer>p {
         width: 50%;
         height: 400px;
         box-sizing: border-box;
+        /* 요소의 크기 계산시 padding,border
+ 을 포함해서 표현되는 방식 */
     }
     #choice {
         clear: both;
+        /* float의 영향을 해제해서 
+밀고올라온 float다음 요소를 
+제자리로 보냄 */
     }
 }
